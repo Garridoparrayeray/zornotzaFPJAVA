@@ -1,0 +1,32 @@
+ARIKETA:
+String[] izena= { "Mexicano", "Alioli", "Cheese Burger", "Barbacoa"};
+String[] ingredienteak = { "carne , tomate, picante, pimiento", "carne, lechuga, bacon, alioli", "carne,  cebolla, cheddar, lechuga, tomate, mahonesa", "carne, bacon, cebolla,cheddar, lechuga,tomate, mahonesa,barbacoa"};
+double[] prezioa = { 8.50, 11, 12.50, 14};
+int[] stock = { 12, 8, 23, 15};
+
+do {
+System.out.println("1. ESKAERA");
+System.out.println("2. HANBURGESARIK MERKEENA");
+System.out.println("3. HANBURGESA BATEN INFORMAZIOA EMAN");
+System.out.println("4. INGREDIENTEAK BILATU");
+System.out.println("5. STOCK-A TXIKITU");
+System.out.println("6. HANBURGESAK PERTSONAKO");
+System.out.println("7. IRTEN");
+
+- Erabiltzaileak aukerak izango ditu 7 sakatu arte.
+
+- switch-case baten bitartez, aukera ezberdinak bistaratuko dira:
+ 
+1: Hanburgesaren izena eta kantitatea eskatuko dira eta eskaeraren prezioa bistaratuko da.
+
+2: Hanburgesarik merkeenaren izena eta prezioa bistaratuko dira.
+
+3: Erabiltzaile-erosleak hanburgesaren izena sartuko du eta bere ingrediente guztiak eta stock-a bistaratuko da.
+
+4: Erabiltzaile-erosleak ingredientea eskatuko du eta programak ingrediente hori duten hanburgesak bistaratuko ditu "BAI, ingrediente hori duten hanburgesak daude, eta honakoak dira:" (BOOLEAN bat beharko da igual). Ez badago ingrediente hori duten hanburgesak ere adierazi beharko da.
+ 
+5: Hanburgesaren izena eta kopurua eskatuta, dagokion hanburgesari stock-a gutxituko zaio.
+
+6: Jango duten bezeroen kopurua eskatuko da eta dagoen hanburgesa kopurua kontutan hartuta, bezero bakoitzak zenbat hanburgesa jan ahal izango duen kalkulatu eta bistaratuko da.
+
+Programa main barruan burutu eta gero berregin, metodoak erabiliz.
