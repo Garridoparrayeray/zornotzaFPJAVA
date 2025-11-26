@@ -1,4 +1,4 @@
-package elikagaiak_objetua;
+package ebal2_objektuen_kudeaketa;
 
 public class Elikagaiak {
 	String elikagai_izena;
@@ -82,6 +82,7 @@ public class Elikagaiak {
 		this.koipeak = koipeak;
 	}
 
+
 	public double getProteinak() {
 		return proteinak;
 	}
@@ -90,6 +91,14 @@ public class Elikagaiak {
 		this.proteinak = proteinak;
 	}
 
+	public String JanariaNutriscore() {
+		return "Elikagai izena: " + elikagai_izena + "\n"
+				+ "Egoera: " + egoera + "\n"
+				+ "Kaloriak: " + kaloriak + "\n"
+				+ "Karbohidratoak: " + karbohidratoak + "\n"
+				+ "Koipeak: " + koipeak + "\n"
+				+ "Proteinak: " + proteinak + "\n";
+	}
 	@Override
 	public String toString() {
 		return "Elikagaiak [elikagai_izena=" + elikagai_izena + ", egoera=" + egoera + ", elikagai_mota="
