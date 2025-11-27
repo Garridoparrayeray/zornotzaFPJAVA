@@ -1,0 +1,404 @@
+mingarratzak;gordinik;18.0;2.5;0.4;2.2;barazkia
+mingarratzak;egosita;5.0;0.9;0.1;1.1;barazkia
+zerbak;gordinik;18.0;1.9;0.3;2.4;barazkia
+txikoria;gordinik;16.0;1.2;0.2;2.9;barazkia
+txikoria;tostada;280.0;28.1;2.0;42.0;barazkia
+berakatza;erraboil;115.0;6.6;0.1;26.1;barazkia
+orburua;gordinik;67.0;3.0;0.8;18.8;barazkia
+orburua;egosita;16.0;1.1;0.2;3.5;barazkia
+apio;gordinik;19.0;1.2;0.2;4.5;barazkia
+apio;egosita;9.5;1.0;0.15;2.1;barazkia
+batata;gordinik;127.0;2.1;0.6;29.5;barazkia
+batata;egosita;98.0;1.7;0.5;26.0;barazkia
+alberjinia;gordinik;19.0;1.2;0.2;4.9;barazkia
+berroak;gordinik;25.0;2.1;0.3;47.7;barazkia
+brokoli;gordinik;29.0;3.2;0.2;4.9;barazkia
+brokoli;egosita;17.0;1.3;0.13;4.2;barazkia
+kalabaza;gordinik;28.0;0.7;0.1;6.3;barazkia
+kalabaza;egosita;21.0;1.08;0.22;4.8;barazkia
+kalabazina;gordinik;23.0;4.2;0.1;7.3;barazkia
+kardu;gordinik;24.0;2.3;0.3;5.3;barazkia
+kardu;egosita;17.0;1.4;0.2;3.6;barazkia
+kipula;gordinik;38.0;1.3;0.2;8.8;barazkia
+kipula;egosita;20.2;0.4;0.2;4.3;barazkia
+kipula;frijituta;335.0;1.8;33.3;13.2;barazkia
+aza;gordinik;28.0;1.7;0.2;6.1;barazkia
+aza;egosita;15.0;1.3;0.1;2.6;barazkia
+aza;garratza;23.0;1.4;0.3;4.1;barazkia
+Bruselako aza;gordinik;42.0;3.8;0.5;8.2;barazkia
+Bruselako aza;egosita;20.0;3.1;0.4;5.1;barazkia
+aza kizkur;gordinik;33.0;3.2;0.4;5.2;barazkia
+azalorea;gordinik;28.0;2.3;0.2;5.04;barazkia
+azalorea;egosita;20.0;1.9;0.7;3.0;barazkia
+arbi-aza;gordinik;33.0;2.2;0.1;6.8;barazkia
+txanpinoia;gordinik;27.0;3.7;0.2;3.7;barazkia
+txiribia;gordinik;5.8;1.5;0.5;13.5;barazkia
+txiribia;egosita;34.0;1.1;0.4;8.5;barazkia
+eskarola;gordinik;20.0;1.6;0.2;4.0;barazkia
+zainzuriak;gordinik;25.0;2.3;0.2;4.1;barazkia
+zainzuriak;egosita;20.0;2.1;0.2;3.8;barazkia
+espinacas;gordinik;26.0;2.5;0.3;4.1;barazkia
+espinacas;egosita;20.0;2.2;0.2;5.2;barazkia
+judiasverdes;gordinik;35.0;2.3;0.2;6.2;barazkia
+judiasverdes;egosita;15.0;1.0;0.1;3.2;barazkia
+lechuga;gordinik;17.0;1.2;0.2;2.9;barazkia
+lombarda;gordinik;35.0;2.6;0.15;5.2;barazkia
+mostaza;gordinik;20.0;2.1;0.3;3.8;barazkia
+nabos;gordinik;30.0;1.8;0.3;5.8;barazkia
+nabos;egosita;21.0;1.3;0.2;4.7;barazkia
+patata;gordinik;85.0;2.1;0.2;19.0;barazkia
+patata;egosita;65.0;1.7;0.3;15.4;barazkia
+patata;asada;110.0;2.6;0.7;29.4;barazkia
+patata;frijituta;230.0;3.3;10.6;30.1;barazkia
+patata;pure;121.0;1.8;5.5;16.3;barazkia
+patata;almidon;350.0;1.8;0.9;81.8;barazkia
+pepino;gordinik;10.0;0.7;0.15;2.7;barazkia
+perejil;gordinik;50.0;3.9;0.9;8.8;barazkia
+pimienta;gordinik;28.0;1.2;0.2;5.9;barazkia
+pimiento;gordinik;27.0;1.3;0.6;7.2;barazkia
+pimiento;egosita;18.0;0.9;0.25;4.5;barazkia
+puerros;gordinik;37.0;2.8;0.35;7.7;barazkia
+rabanos;gordinik;18.0;1.2;0.1;3.6;barazkia
+remolacha;gordinik;43.0;1.8;0.1;10.6;barazkia
+remolacha;egosita;35.0;1.9;0.1;8.9;barazkia
+repollo;gordinik;25.0;1.6;0.2;5.2;barazkia
+seta;gordinik;17.0;1.9;0.3;3.8;barazkia
+seta;frijituta;111.0;2.2;24.3;5.8;barazkia
+tomate;gordinik;21.0;1.3;0.25;4.0;barazkia
+tomate;egosita;19.0;1.0;0.1;3.8;barazkia
+tomate;frijituta;73.0;2.3;6.2;4.2;barazkia
+tomate;jugo;18.0;0.8;1.2;3.5;barazkia
+trufa;freskoa;63.0;7.6;0.5;6.6;barazkia
+trufa;seca;260.0;36.9;2.0;28.9;barazkia
+verduras(medio);gordinik;23.0;1.3;0.2;38.0;barazkia
+zanahoria;gordinik;40.0;1.1;0.3;8.8;barazkia
+zanahoria;egosita;27.0;0.8;0.4;6.1;barazkia
+albaricoque;gordinik;45.0;0.8;0.6;9.9;frutafreskoa
+albaricoque;konserban;72.0;0.5;0.3;18.0;frutafreskoa
+albaricoque;jugo;50.0;0.45;0.7;11.8;frutafreskoa
+arandano;gordinik;53.0;0.8;0.6;13.1;frutafreskoa
+cerezas;gordinik;65.0;1.3;0.6;15.9;frutafreskoa
+cerezas;egosita;23.0;0.8;0.4;9.1;frutafreskoa
+ciruelas;gordinik;58.0;0.75;0.3;15.5;frutafreskoa
+frambuesas;gordinik;45.0;1.1;0.5;11.1;frutafreskoa
+fresa;jugop;40.0;0.8;0.6;8.9;frutafreskoa
+freson;gordinik;25.0;1.8;0.1;5.3;frutafreskoa
+granada;gordinik;60.0;2.5;0.8;16.2;frutafreskoa
+grosella;gordinik;42.0;1.3;0.2;9.5;frutafreskoa
+higocomun;gordinik;69.0;1.3;0.4;16.1;frutafreskoa
+limon;gordinik;36.0;1.0;1.5;9.3;frutafreskoa
+limon;crua;25.0;0.5;0.3;8.1;frutafreskoa
+mandarina;jugo;33.0;1.2;0.9;10.8;frutafreskoa
+mango;gordinik;66.0;0.7;0.2;17.2;frutafreskoa
+manzana;gordinik;52.0;0.3;0.4;13.8;frutafreskoa
+manzana;gordinik;102.0;0.8;0.5;27.0;frutafreskoa
+melocoton;jugo;48.0;0.7;0.2;12.1;frutafreskoa
+melocoton;gordinik;68.0;0.4;0.1;18.2;frutafreskoa
+melocoton;konserban;49.6;0.32;0.1;13.4;frutafreskoa
+melon;jugo;29.0;0.4;0.2;6.4;frutafreskoa
+membrillo;gordinik;42.0;0.6;0.93;11.4;frutafreskoa
+mora;gordinik;56.0;1.1;0.9;10.2;frutafreskoa
+naranja;juego;45.0;0.8;0.2;10.5;frutafreskoa
+naranja;gordinik;44.0;0.7;0.2;10.1;frutafreskoa
+nispero;zumo;80.0;0.8;0.8;22.3;frutafreskoa
+peras;gordinik;58.0;0.7;0.4;16.8;frutafreskoa
+peras;asadas;75.0;0.8;0.1;25.2;frutafreskoa
+peras;konserban;51.0;0.3;0.08;13.7;frutafreskoa
+piña;nectar;51.0;0.45;0.2;13.6;frutafreskoa
+piña;gordinik;76.0;0.4;0.1;19.8;frutafreskoa
+piña;konserban;51.0;0.3;0.1;13.1;frutafreskoa
+platano;jugogordinik;91.0;1.2;0.3;21.8;frutafreskoa
+ruibardo;gordinik;16.0;0.5;0.1;3.8;frutafreskoa
+sandia;gordinik;31.0;0.5;0.2;6.9;frutafreskoa
+toronja;gordinik;32.0;0.6;0.2;8.0;frutafreskoa
+uvablanca;gordinik;74.0;0.8;1.0;17.0;frutafreskoa
+uva(jugo);freskoa;38.0;2.5;0.1;8.0;frutafreskoa
+almortas;gordinik;328.0;27.8;1.1;10.0;lekaduna
+garbanzos;gordinik;355.0;21.8;5.1;12.6;lekaduna
+garbanzos;egosita;150.0;10.2;5.0;65.0;lekaduna
+guisantes freskoas;gordinik;98.0;7.2;0.4;73.9;lekaduna
+guisantes freskoas;egosita;68.0;4.0;0.3;85.0;lekaduna
+guisantes lehorrak;gordinik;323.0;23.5;1.8;9.7;lekaduna
+guisantes lehorrak;hervidos;77.0;6.9;0.0;73.3;lekaduna
+guisantes lehorrak;konserban;91.0;5.9;0.0;73.7;lekaduna
+habas;gordinik;315.0;29.4;1.5;14.5;lekaduna
+habas;egosita;108.0;7.1;0.9;70.5;lekaduna
+judias blancas;gordinik;320.0;20.8;1.7;62.5;lekaduna
+judias blancas;egosita ;99.0;7.6;0.8;18.3;lekaduna
+judias rojas;gordinik;332.0;20.1;1.5;63.5;lekaduna
+judias rojas;egosita ;92.0;6.6;0.4;16.3;lekaduna
+lentejas secas;gordinik;339.0;23.7;1.2;62.5;lekaduna
+lentejas secas;egosita ;102.0;7.1;0.3;19.5;lekaduna
+soja freskoa;gordinik;135.0;13.9;4.8;10.3;lekaduna
+soja seca;gordinik;342.0;34.9;18.1;34.3;lekaduna
+helado;natural;206.0;3.9;12.0;21.0;esnekia
+asto esnea;freskoa;42.0;1.7;1.5;5.8;esnekia
+ahuntz esnea;freskoa;68.0;3.6;4.4;4.5;esnekia
+emakume esnea;freskoa;68.0;1.5;3.8;6.9;esnekia
+ardi esnea;freskoa;86.0;5.6;5.5;5.7;esnekia
+behi esnea;freskoa;68.0;3.5;3.8;5.0;esnekia
+behi esnea;desnatada;36.0;3.6;0.1;4.9;esnekia
+behi esnea;concent.;157.0;7.6;8.6;11.1;esnekia
+esnea behia condens.;con azucar;348.0;8.1;8.9;54.8;esnekia
+behi esnea;total seca;510.0;26.8;27.9;38.8;esnekia
+esnea behia cond. Desn.;seca;356.0;36.8;1.3;53.9;esnekia
+esnea debehia;con cacao;100.0;3.3;4.3;12.0;esnekia
+mantequilla;freskoa;718.0;0.68;81.3;0.7;esnekia
+nata;freskoa;362.0;2.3;38.0;3.1;esnekia
+gazta burgos;natural;190.0;12.1;14.6;3.16;esnekia
+gazta cabrales;natural;400.0;26.7;34.7;2.1;esnekia
+gazta emmental;natural;397.0;26.8;30.5;2.3;esnekia
+gazta gervaia;natural;415.0;19.7;36.0;2.0;esnekia
+gazta gorgonzola;natural;365.0;24.5;28.0;1.8;esnekia
+gazta graso;natural;270.0;8.0;25.0;3.0;esnekia
+gazta gruyere;natural;420.0;33.0;32.2;4.0;esnekia
+gazta magro;natural;200.0;39.0;1.8;4.2;esnekia
+gazta manchego;natural;400.0;32.5;32.0;1.4;esnekia
+gazta roquefort;natural;393.0;23.4;33.6;2.5;esnekia
+gazta semigraso;natural;253.0;36.2;9.9;3.0;esnekia
+gazta villalon;natural;450.0;17.5;46.0;1.9;esnekia
+requeson miraflores;natural;150.0;8.7;12.1;4.8;esnekia
+yogur;natural;62.0;3.8;3.5;4.3;esnekia
+Arraultz osoa;gordinik;155.0;13.6;10.9;0.55;arrautza
+arrautza;Escalfado;154.0;12.2;11.3;0.6;arrautza
+arrautza;frijituta;220.0;13.6;17.5;2.0;arrautza
+arrautza;Hervido;155.0;12.1;11.6;0.6;arrautza
+Aceite higado bacalao;natural;916.0;0.0;99.8;0.0;olioa eta koipea
+Mahonesa;natural;720.0;1.5;78.0;8.0;olioa eta koipea
+Manteka txerria grasa;natural;893.0;0.5;99.2;0.0;olioa eta koipea
+Margarina;natural;732.0;0.5;88.5;0.7;olioa eta koipea
+azukrea;refinado;401.0;0.0;0.0;99.8;goxokiak
+azukrea;sin refinar;378.0;1.4;0.0;93.6;goxokiak
+Mahats azukrea;natural;391.0;0.0;0.0;99.0;goxokiak
+Caldo en Cubitos;natural;190.0;11.0;1.4;47.0;goxokiak
+Caramelos ;natural;397.0;2.4;11.6;79.5;goxokiak
+Confituras;natural;292.0;0.6;2.1;69.2;goxokiak
+Chocolate;amargo;561.0;5.7;53.3;38.0;goxokiak
+Chocolate;lacteado;558.0;7.4;31.3;53.0;goxokiak
+Jaleas;natural;270.0;3.1;0.3;67.0;goxokiak
+Levadura;prensada;96.0;13.1;0.28;12.2;goxokiak
+Levadura;seca;276.0;38.9;1.8;39.9;goxokiak
+Malta (extracto);lehorra;300.0;5.2;0.0;84.8;goxokiak
+Melaza;natural;242.0;2.4;0.0;69.6;goxokiak
+Miel de Abeja;natural;328.0;0.4;0.0;81.0;goxokiak
+Abadejo;freskoa;58.0;13.6;0.3;0.0;arraina
+abadejo (lehorra);salado;361.0;81.5;2.7;0.0;arraina
+abadejo;egosita;107.0;23.7;1.1;0.7;arraina
+abadejo;frijituta;170.0;17.6;9.5;6.8;arraina
+almeja;freskoa;81.0;13.5;1.6;8.4;arraina
+almeja;egosita;68.0;12.1;2.4;0.0;arraina
+anchoas;freskoa;138.0;21.4;5.8;0.9;arraina
+anchoas;konserban;185.0;18.8;11.2;1.0;arraina
+anguila de rio;freskoa;142.0;18.8;13.6;3.9;arraina
+anguila de rio;egosita;232.0;13.1;17.3;3.5;arraina
+arenque;freskoa;120.0;16.8;8.7;0.0;arraina
+arenque;frijituta;212.0;21.9;13.7;1.5;arraina
+atun;freskoa;148.0;18.9;9.1;0.3;arraina
+atun;konserban;261.0;33.2;14.6;0.0;arraina
+bacalao;freskoa;64.0;14.3;0.5;6.5;arraina
+bacalao lehorra;salado;230.0;38.7;7.2;0.0;arraina
+balalao;egosita;94.0;19.2;3.1;5.0;arraina
+bacalao;frijituta;181.0;21.7;9.0;0.0;arraina
+barbo;freskoa;95.0;15.2;4.6;0.0;arraina
+barbo;egosita;120.0;19.3;5.0;0.0;arraina
+barbo;frijituta;153.0;18.8;10.5;0.0;arraina
+bonito;freskoa;147.0;26.7;4.5;0.0;arraina
+boqueron;freskoa;110.0;21.2;3.2;0.0;arraina
+boqueron;konserban;177.0;22.0;10.2;0.0;arraina
+breca;freskoa;75.0;17.0;0.9;0.0;arraina
+breca;frijituta ;146.0;19.6;8.3;0.0;arraina
+calamar;freskoa;62.0;8.7;3.6;0.0;arraina
+calamar;egosita;73.0;9.4;4.3;0.0;arraina
+calamar;frijituta;118.0;10.1;9.2;0.0;arraina
+camaron;freskoa ;121.0;26.5;1.6;4.2;arraina
+camaron;egosita;128.0;25.2;1.8;0.45;arraina
+cangrejo;freskoa;89.0;14.2;2.7;1.6;arraina
+cangrejo;egosita;103.0;14.0;4.1;0.0;arraina
+carpa;freskoa;97.0;19.4;1.9;0.0;arraina
+carpa;egosita;92.0;19.2;1.5;0.0;arraina
+carpa;frijituta ;115.0;20.1;4.6;0.0;arraina
+caviar;konserban;276.0;32.0;16.0;0.0;arraina
+centollo;freskoa;64.0;13.6;2.5;0.0;arraina
+centollo;egosita;75.0;14.8;2.7;0.0;arraina
+congrio;freskoa;98.0;15.7;4.5;0.0;arraina
+congrio;egosita;109.0;20.8;3.5;0.0;arraina
+congrio;frijituta;246.0;17.3;19.0;6.5;arraina
+chirla;freskoa;79.0;12.8;1.4;3.4;arraina
+dorada;freskoa;83.0;18.6;1.0;0.0;arraina
+dorada;egosita;91.0;19.9;1.4;0.0;arraina
+faneka;freskoa;76.0;18.8;0.14;0.0;arraina
+faneka;egosita;83.0;20.1;0.4;0.0;arraina
+faneka;frijituta ;124.0;19.0;6.1;0.0;arraina
+oilarra;freskoa;79.0;19.0;1.2;0.0;arraina
+oilarra;egosita;97.0;20.6;1.6;0.0;arraina
+oilarra;frijituta;122.0;20.6;5.3;0.0;arraina
+gambas;freskoa;96.0;20.1;2.0;0.0;arraina
+gambas;egosita;107.0;22.3;2.4;0.0;arraina
+hipoglomo halibut;freskoa;126.0;18.9;4.9;0.0;arraina
+langosta;frseca;90.0;17.5;1.8;0.0;arraina
+langosta;egosita;106.0;8.2;3.4;0.0;arraina
+langostino;freskoa;240.0;45.7;10.2;0.0;arraina
+langostino;egosita;124.0;39.2;8.3;0.0;arraina
+lenguado;freskoa;74.0;17.3;0.8;0.0;arraina
+lenguado;egosita;93.0;19.4;1.4;0.0;arraina
+lenguado;frijituta;221.0;20.1;15.3;0.0;arraina
+lija;egosita;98.0;21.8;0.9;0.0;arraina
+lija;frijituta ;169.0;17.0;8.2;0.0;arraina
+lupina;freskoa;97.0;15.4;4.5;0.0;arraina
+lupina;egosita;123.0;19.5;5.1;0.0;arraina
+makarela;freskoa;160.0;18.9;9.3;0.0;arraina
+makarela;frijituta;185.0;19.8;11.2;0.0;arraina
+mejillon;freskoa;62.0;9.8;1.6;2.2;arraina
+mejillon;egosita;87.0;16.8;2.0;0.0;arraina
+lebatza;freskoa;87.0;16.7;2.3;0.0;arraina
+lebatza;egosita;104.0;18.3;3.3;0.0;arraina
+lebatza;frijituta ;170.0;18.3;9.3;6.2;arraina
+meroa;freskoa;86.0;19.2;1.04;0.0;arraina
+meroa;egosita;107.0;20.4;3.4;0.0;arraina
+mujol;freskoa;68.0;17.8;1.2;0.0;arraina
+mujol;egosita;123.0;21.6;4.0;0.0;arraina
+navajas;freskoa;118.0;26.7;1.6;0.0;arraina
+ostrak;freskoa;53.0;9.6;1.5;3.8;arraina
+ostrak;egosita;87.0;5.3;5.4;5.3;arraina
+perkak;freskoa;83.0;16.7;1.4;0.0;arraina
+perkak;egosita;92.0;18.4;2.2;0.8;arraina
+lanpernak;egosita;75.0;19.2;1.9;0.8;arraina
+pescadilla;freskoa;70.0;16.4;0.5;0.0;arraina
+pescadilla;egosita;95.0;20.9;0.8;1.2;arraina
+pescadilla;frijituta;183.0;19.6;10.7;2.8;arraina
+platija;freskoa;80.0;15.8;1.7;0.0;arraina
+platija;egosita;90.0;16.9;1.5;0.0;arraina
+platija;frijituta ;219.0;15.4;13.0;9.3;arraina
+igela (hankak);freskoa;72.0;16.3;0.3;0.0;arraina
+igela (hankak);frijituta ;283.0;22.0;7.9;8.8;arraina
+sapua;freskoa;73.0;15.8;1.4;0.0;arraina
+sapua;egosita;82.0;16.5;2.1;0.0;arraina
+raya;frijituta;242.0;15.0;16.4;7.5;arraina
+errebolloa;freskoa;81.0;18.1;1.2;0.0;arraina
+errebolloa;egosita;117.0;26.2;1.6;0.0;arraina
+izokina;freskoa;145.0;21.5;7.8;0.0;arraina
+izokina;egosita;195.0;20.8;10.6;3.4;arraina
+izokina;konserban;155.0;20.3;8.2;0.2;arraina
+barbarina;freskoa;69.0;13.5;1.8;0.0;arraina
+barbarina;egosita;118.0;21.4;4.3;0.0;arraina
+barbarina;frijituta;164.0;17.6;10.5;0.7;arraina
+sardina;freskoa;141.0;21.8;6.3;1.7;arraina
+sardina;egosita;225.0;24.9;14.0;1.2;arraina
+sardina;frijituta ;347.0;19.6;33.4;0.0;arraina
+sardina;coserva ;209.0;19.8;14.5;0.9;arraina
+sollo;freskoa;80.0;17.1;1.8;0.0;arraina
+sollo;egosita;122.0;23.2;4.0;0.0;arraina
+tenka;freskoa;55.0;8.2;2.7;0.0;arraina
+tenka;egosita;88.0;16.0;3.1;0.0;arraina
+amuarraina;freskoa;96.0;19.2;2.1;0.0;arraina
+amuarraina;egosita;133.0;22.3;3.8;1.3;arraina
+amuarraina;frijituta ;188.0;26.0;10.2;0.0;arraina
+vieira;freskoa;73.0;14.8;1.9;0.0;arraina
+volador;freskoa;87.0;15.8;3.0;0.0;arraina
+volador;egosita;130.0;21.6;5.9;0.0;arraina
+aharitoa;gordinik;210.0;17.5;16.0;0.2;carne
+zaldia;gordinik;112.0;19.0;4.0;0.9;carne
+ahuntza;gordinik;127.0;19.6;4.3;0.5;carne
+ahuntzkume;gordinik;40.0;7.2;1.6;0.1;carne
+bihotza;gordinik;117.0;16.8;4.9;0.4;txerria
+saiheski magroa;gordinik;215.0;14.5;17.0;0.3;txerria
+saiheski magroa;estofado;306.0;22.1;24.2;2.1;txerria
+saiheski magroa;frijituta;308.0;21.5;26.6;0.0;txerria
+saiheski erdimagroa;estofado;505.0;18.6;50.3;0.0;txerria
+saiheski erdimagroa;frijituta;560.0;15.2;62.0;0.0;txerria
+gibela;gordinik;134.0;19.4;4.9;1.8;txerria
+gibela;frijituta;236.0;22.7;10.8;9.5;txerria
+urdaiazpikoa;gordinik;262.0;15.8;18.7;0.3;txerria
+urdaiazpikoa;egosita;354.0;20.3;32.1;0.3;txerria
+York;gordinik;454.0;17.2;43.0;0.8;txerria
+York;egosita;435.0;16.2;39.6;0.0;txerria
+lomo koipetsua;errea;412.0;23.7;35.8;0.0;txerria
+lomo koipetsua;estofado;404.0;18.6;41.3;0.0;txerria
+lomo koipetsua;frijituta;489.0;16.1;53.2;0.0;txerria
+lomo magroa;errea;271.0;26.1;18.1;0.0;txerria
+lomo magroa;estofado;285.0;20.3;23.2;1.8;txerria
+lomo magroa;frijituta;316.0;19.6;28.1;0.0;txerria
+manteka;gordinik;877.0;0.8;98.0;0.0;txerria
+hanka;errea;317.0;24.6;23.2;0.0;txerria
+promedio;natural;736.0;3.9;80.0;0.0;txerria
+giltzurruna;gordinik;105.0;15.2;4.3;0.8;txerria
+tozinoa;salado;763.0;6.6;80.2;0.7;txerria
+bihotza;gordinik ;130.0;15.4;7.1;1.0;txahala
+saiheskia;gordinik ;135.0;19.5;7.5;0.4;txahala
+saiheskia;errea;232.0;30.5;12.6;0.3;txahala
+saiheskia;frijituta;296.0;27.5;20.1;4.4;txahala
+filetea;gordinik ;108.0;20.1;2.7;0.0;txahala
+filetea;errea;232.0;30.5;11.5;0.0;txahala
+gibela;gordinik ;134.0;18.7;5.2;3.6;txahala
+gibela;egosita;167.0;20.7;7.0;4.7;txahala
+gibela;frijituta;237.0;26.5;13.3;3.7;txahala
+esneatxoak;gordinik ;103.0;17.6;3.8;0.0;txahala
+esneatxoak;estofado;162.0;22.7;8.1;0.0;txahala
+mihia;estofado;190.0;15.9;14.8;0.1;txahala
+promedio;natural;184.0;19.1;12.0;0.0;txahala
+giltzurruna;egosita;102.0;15.4;4.8;0.0;txahala
+giltzurruna;frijituta;182.0;14.8;15.3;0.0;txahala
+sesoak;egosita;115.0;10.3;8.3;0.8;txahala
+azpizuna;gordinik ;93.0;19.3;1.6;2.3;txahala
+azpizuna;errea;192.0;28.7;8.5;3.2;txahala
+azpizuna;frijituta;268.0;23.8;20.1;0.0;txahala
+tripakiak;egosita;99.0;18.0;3.4;0.0;txahala
+Okela;egosita;165.0;23.3;9.2;0.0;arkumea
+Bistec;gordinik;177.0;19.2;10.5;0.0;behia
+Bistec;frijituta;273.0;20.4;20.4;0.0;behia
+Okela;gordinik;140.0;18.2;7.5;0.3;behia
+Okela;konjelatua;142.0;20.3;7.3;0.0;behia
+Okela erdi-koipetsua;gordinik;246.0;17.1;16.2;0.3;behia
+Okela erdi-koipetsua;errea;355.0;18.1;25.2;0.0;behia
+Okela erdi-koipetsua;egosita;210.0;32.5;8.2;0.4;behia
+Bihotza;gordinik;112.0;17.2;4.6;0.7;behia
+Saiheskia;egosita;280.0;26.3;5.8;0.0;behia
+Falda;egosita;413.0;18.1;38.0;0.0;behia
+Gibela;gordinik;130.0;20.0;3.5;3.8;behia
+Gibela;egosita;148.0;23.0;7.8;4.0;behia
+Gibela;frijituta;229.0;26.0;9.1;9.5;behia
+Mihia;gordinik;210.0;15.8;16.3;0.4;behia
+Mihia;egosita;239.0;19.3;15.3;0.5;behia
+Promedio;egosita;268.0;17.5;22.0;0.0;behia
+Giltzurruna;gordinik;122.0;16.2;6.0;0.8;behia
+Giltzurruna;egosita;165.0;27.0;5.4;0.0;behia
+odola;gordinik;77.0;18.1;0.2;0.0;behia
+sesoak;gordinik;120.0;10.0;8.5;0.8;behia
+sesoak;egosita;126.0;10.4;9.2;0.0;behia
+azpizuna;gordinik;120.0;21.0;3.9;0.6;behia
+azpizuna;errea;214.0;25.3;12.1;1.0;behia
+azpizuna;egosita;172.0;22.0;9.1;0.0;behia
+azpizuna;frijituta;279.0;19.1;23.2;0.0;behia
+tripakiak;gordinik;96.0;17.0;2.0;0.15;behia
+Butifarra;Natural;150.0;9.8;13.4;0.0;enbutido
+Txorizoa;natural;614.0;13.6;70.2;0.0;enbutido
+Txorizoa;frijituta;360.0;19.6;60.8;0.0;enbutido
+Odolostea;natural;258.0;5.3;22.5;14.7;enbutido
+Odolostea;egosita;335.0;13.7;29.1;15.3;enbutido
+Odolostea;frijituta;453.0;13.9;42.9;15.9;enbutido
+txerri saltxitxa;natural;390.0;9.8;36.3;9.8;enbutido
+txerri saltxitxa;egosita;360.0;16.5;28.6;7.0;enbutido
+txerri saltxitxa;frijituta;326.0;13.4;29.3;12.7;enbutido
+behi saltxitxa;natural;140.0;9.1;8.3;10.5;enbutido
+behi saltxitxa;egosita;210.0;15.6;12.1;13.6;enbutido
+behi saltxitxa;frijituta;264.0;13.8;18.4;15.7;enbutido
+Frankfurt saltxitxa;natural;248.0;14.0;20.0;2.0;enbutido
+saltxitxoia;Natural;430.0;20.3;36.7;0.1;enbutido
+albarikokea;lehorra;268.0;5.3;0.4;67.6;fruitulehorra
+almendrak;lehorra;612.0;19.7;54.5;17.6;fruitulehorra
+urretzak;lehorra;620.0;15.5;62.2;15.5;fruitulehorra
+kakahueteak;lehorra;550.0;26.1;44.2;20.0;fruitulehorra
+kakahueteak;tostado;610.0;26.5;48.1;18.3;fruitulehorra
+kakao;polvo;340.0;26.0;18.8;38.0;fruitulehorra
+gaztaina lehorra;gordinik;350.0;8.2;3.5;75.3;fruitulehorra
+gaztaina ezlehorra;gordinik;188.0;3.2;2.5;40.0;fruitulehorra
+okarana pasa;gordinik;262.0;2.4;0.6;72.0;fruitulehorra
+koko;freskoa;350.0;3.8;34.8;14.8;fruitulehorra
+koko;esnea;25.0;0.4;0.2;5.8;fruitulehorra
+koko;lehorra;580.0;4.7;48.0;41.3;fruitulehorra
+datilak;lehorrak;271.0;2.2;0.6;72.0;fruitulehorra
+ikoak;lehorrak;280.0;3.9;1.3;67.2;fruitulehorra
+melokotoia;lehorrak;253.0;3.0;0.5;63.0;fruitulehorra
+intxaurra;lehorrak;643.0;17.8;57.6;17.6;fruitulehorra
+pinoiak;lehorrak;310.0;26.4;40.0;29.2;fruitulehorra
+mahatsa;pasa;288.0;3.1;0.9;69.2;fruitulehorra

@@ -1,0 +1,9 @@
+Destino;Continente;Clima;TuristasAnuales;GastoMedio;Seguridad;Satisfaccion;Transporte;Alojamiento
+España;Europa;Templado;83000000;1250.0;85.0;92.0;88.0;90.0
+Japón;Asia;Húmedo;32000000;1600.0;90.0;94.0;87.0;88.0
+Brasil;América;Tropical;6000000;980.0;70.0;80.0;72.0;75.0
+Egipto;África;Cálido;11000000;1150.0;60.0;85.0;68.0;74.0
+Canadá;América;Frío;22000000;1500.0;95.0;90.0;85.0;89.0
+Australia;Oceanía;Templado;9500000;1700.0;92.0;93.0;90.0;91.0
+Noruega;Europa;Frío;7000000;1800.0;98.0;96.0;91.0;92.0
+India;Asia;Tropical;12000000;850.0;65.0;78.0;70.0;69.0
