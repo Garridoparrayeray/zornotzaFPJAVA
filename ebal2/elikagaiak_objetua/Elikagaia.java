@@ -1,6 +1,6 @@
 package elikagaiak_objetua;
 
-public class Elikagaiak {
+public class Elikagaia{
 	String elikagai_izena;
 	String egoera;
 	String elikagai_mota;
@@ -10,7 +10,7 @@ public class Elikagaiak {
 	double proteinak;
 
 	//Konstruktore beteta
-	public Elikagaiak(String elikagai_izena, String egoera, double kaloriak,
+	public Elikagaia(String elikagai_izena, String egoera, double kaloriak,
 			double koipeak, double proteinak, double karbohidratoak, String elikagai_mota) {
 		this.elikagai_izena = elikagai_izena;
 		this.egoera = egoera;
@@ -22,7 +22,7 @@ public class Elikagaiak {
 	}
 	
 	//konstruktore hutsa
-	public Elikagaiak() {
+	public Elikagaia() {
 		this.elikagai_izena = "";
 		this.egoera = "";
 		this.kaloriak = 0.0;
