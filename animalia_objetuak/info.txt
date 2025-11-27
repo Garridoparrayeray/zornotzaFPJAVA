@@ -1,3 +1,0 @@
-raton::mamifero::2::casa::campo::calle
-surikato::oviparo::5::selva::sabana::bosque
-tigre::mamifero::20::selva::desierto::monte
