@@ -1,6 +1,6 @@
 package elikagaiak_objetua;
 
-public class Elikagaia{
+public class Elikagaiak {
 	String elikagai_izena;
 	String egoera;
 	String elikagai_mota;
@@ -10,7 +10,7 @@ public class Elikagaia{
 	double proteinak;
 
 	//Konstruktore beteta
-	public Elikagaia(String elikagai_izena, String egoera, double kaloriak,
+	public Elikagaiak(String elikagai_izena, String egoera, double kaloriak,
 			double koipeak, double proteinak, double karbohidratoak, String elikagai_mota) {
 		this.elikagai_izena = elikagai_izena;
 		this.egoera = egoera;
@@ -22,7 +22,7 @@ public class Elikagaia{
 	}
 	
 	//konstruktore hutsa
-	public Elikagaia() {
+	public Elikagaiak() {
 		this.elikagai_izena = "";
 		this.egoera = "";
 		this.kaloriak = 0.0;
@@ -82,6 +82,7 @@ public class Elikagaia{
 		this.koipeak = koipeak;
 	}
 
+
 	public double getProteinak() {
 		return proteinak;
 	}
@@ -90,6 +91,14 @@ public class Elikagaia{
 		this.proteinak = proteinak;
 	}
 
+	public String JanariaNutriscore() {
+		return "Elikagai izena: " + elikagai_izena + "\n"
+				+ "Egoera: " + egoera + "\n"
+				+ "Kaloriak: " + kaloriak + "\n"
+				+ "Karbohidratoak: " + karbohidratoak + "\n"
+				+ "Koipeak: " + koipeak + "\n"
+				+ "Proteinak: " + proteinak + "\n";
+	}
 	@Override
 	public String toString() {
 		return "Elikagaiak [elikagai_izena=" + elikagai_izena + ", egoera=" + egoera + ", elikagai_mota="
