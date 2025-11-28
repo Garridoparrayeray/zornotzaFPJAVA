@@ -1,4 +1,4 @@
-package ebal2_objektuen_kudeaketa;
+package erabiltzaileKudeaketa;
 
 import java.nio.file.spi.FileSystemProvider;
 import java.util.ArrayList;
@@ -177,4 +177,5 @@ public class ErabKud {
         }
     }
 }
+
 
