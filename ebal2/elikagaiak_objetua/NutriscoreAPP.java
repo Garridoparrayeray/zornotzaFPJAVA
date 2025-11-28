@@ -2,128 +2,218 @@ package elikagaiak_objetua;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NutriscoreAPP {
-    private static final String FITXATEGIA = "./src/elikagaiak_objetua/janariak.txt";
-    private ArrayList<Elikagaia> elikagaiLista = new ArrayList<>();
-    private Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        NutriscoreAPP app = new NutriscoreAPP();
-        app.datuakKargatu();
-        app.menua();
-    }
+	private static Scanner sc = new Scanner(System.in);
+	private static ArrayList<Elikagaiak> ElikagaiaLista = new ArrayList<>();
+	final static String fitxategia = "./src/ebal2_objektuen_kudeaketa/janariak.txt";
+	private static boolean aukeratuta = false;
+	private static String aukera = "";
 
-    private void datuakKargatu() {
-        File f = new File(FITXATEGIA);
-        if (!f.exists()) {
-            System.err.println("Fitxategia ez da aurkitu: " + f.getAbsolutePath());
-            System.exit(-1);
-        }
+	public static void main(String[] args) {
+		NutriscoreAPP app = new NutriscoreAPP();
+		app.DatuakKargatu();
+		app.Menua();
+	}
 
-        try (Scanner scFile = new Scanner(f)) {
-            while (scFile.hasNextLine()) {
-                String lerroa = scFile.nextLine();
-                String[] aux = lerroa.split(";");
-                if (aux.length < 7) continue;
+	private void DatuakKargatu() {
 
-                String izena = aux[0];
-                String egoera = aux[1];
-                String mota = aux[2];
-                double kaloriak = Double.parseDouble(aux[3]);
-                double karbo = Double.parseDouble(aux[4]);
-                double koipe = Double.parseDouble(aux[5]);
-                double proteinak = Double.parseDouble(aux[6]);
+		int LerroKontaketa, JanariKontaketa;
+		LerroKontaketa = 0;
+		JanariKontaketa = 0;
 
-                elikagaiLista.add(new Elikagaia(izena, egoera, proteinak, kaloriak, karbo, koipe, mota));
-            }
-            System.out.println("Datuak kargatu dira. Guztira: " + elikagaiLista.size());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+		File f = new File(fitxategia);
+		if (!f.exists() || !f.isFile()) {
+			System.err.println("ERROREA. Fitxategia ezin da aurkitu. " + f.getAbsolutePath());
+			System.exit(-1);
+		}
 
-    private void menua() {
-        int aukera;
-        do {
-            System.out.println("\n--- MENUA ---");
-            System.out.println("1. Elikagaien bilatzailea");
-            System.out.println("2. Elikagaiak erakutsi");
-            System.out.println("3. Kaloriak kalkulatu");
-            System.out.println("0. Irten");
-            System.out.print("Aukera: ");
-            aukera = sc.nextInt();
-            sc.nextLine(); // consumir salto de línea
+		try {
+			Scanner scFile = new Scanner(f);
 
-            switch (aukera) {
-                case 1:
-                    bilatuElikagai();
-                    break;
-                case 2:
-                    erakutsiElikagaiak();
-                    break;
-                case 3:
-                    kalkulatuKaloriak();
-                    break;
-                case 0:
-                    System.out.println("Agur!");
-                    break;
-                default:
-                    System.out.println("Aukera okerra!");
-            }
+			String lerroa;
 
-        } while (aukera != 0);
-    }
+			while (scFile.hasNext()) {
+				lerroa = scFile.nextLine().trim();// .next() erabiltzen badugu, delimitadore bezala hartzen du espazioa,
+													// -, eta gehiago. Errore emango du
+				LerroKontaketa++;
 
-    private void bilatuElikagai() {
-        System.out.print("Sartu elikagaiaren izena: ");
-        String izena = sc.nextLine();
-        boolean aurkitu = false;
-        for (Elikagaia e : elikagaiLista) {
-            if (e.getElikagai_izena().equalsIgnoreCase(izena)) {
-                System.out.println(e);
-                aurkitu = true;
-            }
-        }
-        if (!aurkitu) System.out.println("Elikagairik ez da aurkitu.");
-    }
+				if (lerroa.isEmpty()) {
+					System.err.println("OHARRA. " + "Lerroa: " + LerroKontaketa + " hutsik dago.");
+					continue;// hurrengo ilarara saltatuko dugu
+				}
 
-    private void erakutsiElikagaiak() {
-        System.out.print("Lehen elikagaiaren indizea: ");
-        int lehen = sc.nextInt();
-        System.out.print("Erregistro kopurua: ");
-        int kop = sc.nextInt();
-        sc.nextLine();
+				String aux[] = lerroa.split(";");// split-a datuk hartzeko
+				String elikagai_izena = aux[0];
+				String egoera = aux[1];
+				double kaloriak = Double.parseDouble(aux[2]);
+				double karbohidratoak = Double.parseDouble(aux[3]);
+				double koipeak = Double.parseDouble(aux[4]);
+				double proteinak = Double.parseDouble(aux[5]);
+				String elikagai_mota = aux[6];
+				Elikagaiak e = new Elikagaiak(elikagai_izena, egoera, kaloriak, karbohidratoak, koipeak, proteinak,
+						elikagai_mota);
+				ElikagaiaLista.add(e);
+				JanariKontaketa++;
 
-        for (int i = lehen; i < lehen + kop && i < elikagaiLista.size(); i++) {
-            System.out.println(elikagaiLista.get(i));
-        }
-    }
+			}
 
-    private void kalkulatuKaloriak() {
-        System.out.print("Sartu elikagaiaren izena: ");
-        String izena = sc.nextLine();
-        System.out.print("Sartu egoera: ");
-        String egoera = sc.nextLine();
-        System.out.print("Sartu pisua (gramotan): ");
-        double pisua = sc.nextDouble();
-        sc.nextLine();
+			System.out.println("Janari kopurua: " + JanariKontaketa);
+			do {
+				System.out.println("Listaren edukiera ikusi nahi duzu?(bai/ez)");
+				aukera = sc.next().toLowerCase().trim();
+				switch (aukera) {
+				case "bai":
+					aukeratuta = true;
+					System.out.println("Listaren edukiera:");
+					for (Elikagaiak e : ElikagaiaLista) {
+						System.out.println(e);
+					}
+					break;
+				case "ez":
+					aukeratuta = true;
+					break;
 
-        Elikagaia e = null;
-        for (Elikagaia x : elikagaiLista) {
-            if (x.getElikagai_izena().equalsIgnoreCase(izena) && x.getEgoera().equalsIgnoreCase(egoera)) {
-                e = x;
-                break;
-            }
-        }
+				default:
+					System.out.println("Idatzi bai edo ez");
+					break;
 
-        if (e != null) {
-            double kaloriakTot = e.getKaloriak() * pisua / 100.0;
-            System.out.println("Kaloria totala: " + kaloriakTot + " kcal");
-        } else {
-            System.out.println("Elikagairik ez da aurkitu.");
-        }
-    }
+				}
+			} while (aukeratuta == false);
+
+			scFile.close();
+		} catch (Exception e) {
+			System.err.println("ERRORE EZEZAGUNA " + e.getMessage());
+		}
+
+	}
+
+	private void MenuErakutsi() {
+		System.out.println("1 - Elikagaien bilatzailea\r\n" + "\r\n" + "2 - Elikagaiak erakutsi\r\n" + "\r\n"
+				+ "3 - Kaloriak kalkulatu\r\n" + "4 - Irten.");
+	}
+	private void Menua() {
+		int aukerak;
+
+		aukerak = 0;
+
+		do {
+			MenuErakutsi();
+			try {
+				System.out.println("Sartu aukera bat: ");
+				aukerak = sc.nextInt();
+				switch (aukerak) {
+				case 1:
+					ElikagaiBilatzaile();
+					break;
+				case 2:
+					ElikagaiakErakutsi();
+					break;
+				case 3:
+					kalkulatuKaloriak();
+					break;
+				case 4:
+					System.out.println("Irteten...");
+					break;
+				default:
+					System.out.println("Sartu zenbaki bat 1tik 4ra");
+					break;
+				}
+			} catch (InputMismatchException e) {
+				System.err.println("ERROREA. Zenbaki oso bat sartu behar duzu.");
+				sc.next();// buffer garbiketa
+			}
+
+		} while (aukerak != 4);
+
+	}
+	// CASE 1
+	private void ElikagaiBilatzaile() {
+		boolean aurkituta;
+		
+		aurkituta = false;
+		do {
+			System.out.println("Sartu elikagai bat: ");
+			aukera = sc.next().trim();
+			for (Elikagaiak e : ElikagaiaLista) {
+				if (aukera.equalsIgnoreCase(e.getElikagai_izena().toLowerCase().trim())) {
+					aurkituta = true;
+					System.out.println(e.JanariaNutriscore());
+				}
+			}
+			if (aurkituta == false) {
+				System.err.println("ERROREA. Elikagai hori ez da existitzen.");
+			}
+		} while (aurkituta == false);
+
+	}
+
+	private void ElikagaiakErakutsi() {
+		int elikagaiLehenengoPos, elikagaiAzkenPos, i;
+		i = 0;
+		elikagaiLehenengoPos = 0;
+		elikagaiAzkenPos = 0;
+		while (true) {
+			try {
+				System.out.println("Sartu lehenengo elikagaiaren posizioa: ");
+				elikagaiLehenengoPos = sc.nextInt();
+				System.out.println("Sartu azkenengo posizioa: ");
+				elikagaiAzkenPos = sc.nextInt();
+				if (elikagaiLehenengoPos < 0 || elikagaiLehenengoPos > ElikagaiaLista.size() || elikagaiAzkenPos <= 0
+						|| elikagaiAzkenPos > ElikagaiaLista.size()) {
+					System.err.println("ERROREA. Sartu zenbaki bat 0 eta " + ElikagaiaLista.size() + " artean.");
+				} else {
+					break;
+				}
+
+			} catch (InputMismatchException e) {
+				System.err.println("ERROREA. Zenbaki oso bat sartu behar duzu.");
+				sc.next();// buffer garbiketa
+			}
+
+		}
+
+		for (Elikagaiak e : ElikagaiaLista) {
+			if (ElikagaiaLista.indexOf(e) >= elikagaiLehenengoPos && i <= elikagaiAzkenPos - 1) {
+				i++;
+				System.out.println(e);
+			}
+
+		}
+
+	}
+	
+	
+	 private void kalkulatuKaloriak() {
+		 Elikagaiak e = null;
+		 do {
+	        System.out.print("Sartu elikagaiaren izena: ");
+	        String izena = sc.nextLine();
+	        System.out.print("Sartu egoera: ");
+	        String egoera = sc.nextLine();
+	        System.out.print("Sartu pisua (gramotan): ");
+	        double pisua = sc.nextDouble();
+	        sc.nextLine();
+
+	        for (Elikagaiak x : ElikagaiaLista) {
+	            if (x.getElikagai_izena().equalsIgnoreCase(izena) && x.getEgoera().equalsIgnoreCase(egoera)) {
+	                e = x;
+	                break;
+	            }
+	        }
+
+	        if (e != null) {
+	            double kaloriakTot = e.getKaloriak() * pisua / 100.0;
+	            System.out.println("Kaloria totala: " + kaloriakTot + " kcal");
+	        } else {
+	            System.out.println("Elikagairik ez da aurkitu.");
+	        }
+	    }while(e == null);
+	 }
+
 }
