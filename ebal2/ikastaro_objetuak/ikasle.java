@@ -1,4 +1,4 @@
-package ebal2_objektuen_kudeaketa;
+package ikastaro_objektuak;
 
 import java.util.ArrayList;
 

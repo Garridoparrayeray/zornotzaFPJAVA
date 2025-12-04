@@ -1,4 +1,4 @@
-package ebal2_objektuen_kudeaketa;
+package ikastaro_objektuak;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -227,44 +227,51 @@ public class Ikastaro_kudeaketa {
 		}
 	}
 
-	private void gordeIkasleakFitxategian(String fitxategiIzena) throws IOException {
-		try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
-			pw.println("Izena|Adina|Matrikulatutako_Ikastaroen_Izenak"); 
+    private void gordeIkasleakFitxategian(String fitxategiIzena) throws IOException {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
 
-			for (Ikasle ikasle : ikasleLista) {
-				StringBuilder ikastaroIzenakSB = new StringBuilder();
-				for (Ikastaro ikastaro : ikasle.getIkastaroLista()) {
-					ikastaroIzenakSB.append(ikastaro.getIkastaro()).append(",");
-				}
-				String ikastaroIzenak = ikastaroIzenakSB.length() > 0 ? ikastaroIzenakSB.substring(0, ikastaroIzenakSB.length() - 1) : "Bat ere ez";
+            pw.println("Izena|Adina|Matrikulatutako_Ikastaroen_Izenak");
 
-				pw.printf("%s|%d|%s%n", 
-					ikasle.getIzena(), 
-					ikasle.getAdina(), 
-					ikastaroIzenak
-				);
-			}
-		}
-	}
+            for (Ikasle ikasle : ikasleLista) {
 
-	private void gordeIkastaroakFitxategian(String fitxategiIzena) throws IOException {
-		try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
-			pw.println("Ikastaro Izena|Deskribapena|Irakaslea|Ikasleen_Izenak");
+                List<String> ikastaroIzenak = ikasle.getIkastaroLista().isEmpty()
+                        ? List.of("Bat ere ez")
+                        : ikasle.getIkastaroLista().stream()
+                        .map(Ikastaro::getIkastaro)
+                        .toList();
 
-			for (Ikastaro ikastaro : ikastaroLista) {
-				StringBuilder ikasleIzenakSB = new StringBuilder();
-				for (Ikasle ikasle : ikastaro.getIkasleLista()) {
-					ikasleIzenakSB.append(ikasle.getIzena()).append(",");
-				}
-				String ikasleIzenak = ikasleIzenakSB.length() > 0 ? ikasleIzenakSB.substring(0, ikasleIzenakSB.length() - 1) : "Bat ere ez";
+                pw.printf("%s|%d|%s%n",
+                        ikasle.getIzena(),
+                        ikasle.getAdina(),
+                        String.join(",", ikastaroIzenak)
+                );
+            }
+        }
+    }
 
-				pw.printf("%s|%s|%s|%s%n",
-					ikastaro.getIkastaro(),
-					ikastaro.getIkastaro_deskribapena(),
-					ikastaro.getIrakaslea(),
-					ikasleIzenak
-				);
-			}
-		}
-	}
+
+    private void gordeIkastaroakFitxategian(String fitxategiIzena) throws IOException {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
+
+            pw.println("Ikastaro Izena|Deskribapena|Irakaslea|Ikasleen_Izenak");
+
+            for (Ikastaro ikastaro : ikastaroLista) {
+
+                List<String> ikasleIzenak = ikastaro.getIkasleLista().isEmpty()
+                        ? List.of("Bat ere ez")
+                        : ikastaro.getIkasleLista().stream()
+                        .map(Ikasle::getIzena)
+                        .toList();
+
+                pw.printf("%s|%s|%s|%s%n",
+                        ikastaro.getIkastaro(),
+                        ikastaro.getIkastaro_deskribapena(),
+                        ikastaro.getIrakaslea(),
+                        String.join(",", ikasleIzenak)
+                );
+            }
+        }
+    }
+
+}
 }
