@@ -1,4 +1,4 @@
-package ikastaro_objektuak;
+package ikastaro_objetuak;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -226,52 +226,67 @@ public class Ikastaro_kudeaketa {
 			e.printStackTrace();
 		}
 	}
+	
+	/************           ERREPASATU         *****************/
+	private void gordeIkasleakFitxategian(String fitxategiIzena) throws IOException {
+	    try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
 
-    private void gordeIkasleakFitxategian(String fitxategiIzena) throws IOException {
-        try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
+	        pw.println("Izena|Adina|Matrikulatutako_Ikastaroen_Izenak");
 
-            pw.println("Izena|Adina|Matrikulatutako_Ikastaroen_Izenak");
+	        for (Ikasle ikasle : ikasleLista) {
 
-            for (Ikasle ikasle : ikasleLista) {
+	            String ikastaroIzenak = "";
 
-                List<String> ikastaroIzenak = ikasle.getIkastaroLista().isEmpty()
-                        ? List.of("Bat ere ez")
-                        : ikasle.getIkastaroLista().stream()
-                        .map(Ikastaro::getIkastaro)
-                        .toList();
+	            if (ikasle.getIkastaroLista().isEmpty()) {
+	                ikastaroIzenak = "Bat ere ez";
+	            } else {
+	                StringBuilder sb = new StringBuilder();
+	                for (Ikastaro ikastaro : ikasle.getIkastaroLista()) {
+	                    sb.append(ikastaro.getIkastaro()).append(",");
+	                }
+	                // Eliminar la última coma
+	                ikastaroIzenak = sb.substring(0, sb.length() - 1);
+	            }
 
-                pw.printf("%s|%d|%s%n",
-                        ikasle.getIzena(),
-                        ikasle.getAdina(),
-                        String.join(",", ikastaroIzenak)
-                );
-            }
-        }
-    }
+	            pw.printf("%s|%d|%s%n",
+	                    ikasle.getIzena(),
+	                    ikasle.getAdina(),
+	                    ikastaroIzenak
+	            );
+	        }
+	    }
+	}
 
 
-    private void gordeIkastaroakFitxategian(String fitxategiIzena) throws IOException {
-        try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
+	private void gordeIkastaroakFitxategian(String fitxategiIzena) throws IOException {
+	    try (PrintWriter pw = new PrintWriter(new FileWriter(fitxategiIzena))) {
 
-            pw.println("Ikastaro Izena|Deskribapena|Irakaslea|Ikasleen_Izenak");
+	        pw.println("Ikastaro Izena|Deskribapena|Irakaslea|Ikasleen_Izenak");
 
-            for (Ikastaro ikastaro : ikastaroLista) {
+	        for (Ikastaro ikastaro : ikastaroLista) {
 
-                List<String> ikasleIzenak = ikastaro.getIkasleLista().isEmpty()
-                        ? List.of("Bat ere ez")
-                        : ikastaro.getIkasleLista().stream()
-                        .map(Ikasle::getIzena)
-                        .toList();
+	            String ikasleIzenak = "";
 
-                pw.printf("%s|%s|%s|%s%n",
-                        ikastaro.getIkastaro(),
-                        ikastaro.getIkastaro_deskribapena(),
-                        ikastaro.getIrakaslea(),
-                        String.join(",", ikasleIzenak)
-                );
-            }
-        }
-    }
+	            if (ikastaro.getIkasleLista().isEmpty()) {
+	                ikasleIzenak = "Bat ere ez";
+	            } else {
+	                StringBuilder sb = new StringBuilder();
+	                for (Ikasle ikasle : ikastaro.getIkasleLista()) {
+	                    sb.append(ikasle.getIzena()).append(",");
+	                }
+	                // Eliminar la última coma
+	                ikasleIzenak = sb.substring(0, sb.length() - 1);
+	            }
 
-}
+	            pw.printf("%s|%s|%s|%s%n",
+	                    ikastaro.getIkastaro(),
+	                    ikastaro.getIkastaro_deskribapena(),
+	                    ikastaro.getIrakaslea(),
+	                    ikasleIzenak
+	            );
+	        }
+	    }
+	}
+
+
 }

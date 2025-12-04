@@ -1,4 +1,4 @@
-package ikastaro_objektuak;
+package ikastaro_objetuak;
 
 import java.util.ArrayList;
 
@@ -88,15 +88,15 @@ public class Ikastaro {
 		if(IkasleLista == null || IkasleLista.isEmpty()) {
 			sb.append("] Ez dauka ikaslerik.");
 		} else {
-			// *** FIX: Manually iterate and append ONLY the name (izena) ***
+			
 			sb.append("], Ikasleak: [");
 			for (int i = 0; i < IkasleLista.size(); i++) {
-				sb.append(IkasleLista.get(i).getIzena()); // Append only the name
+				sb.append(IkasleLista.get(i).getIzena()); 
 				if (i < IkasleLista.size() - 1) {
 					sb.append(", ");
 				}
 			}
-			sb.append("]"); // Close the Ikasleak bracket
+			sb.append("]");
 		}
 		
 		return sb.toString();

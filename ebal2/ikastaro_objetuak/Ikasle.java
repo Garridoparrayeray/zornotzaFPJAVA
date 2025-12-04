@@ -1,4 +1,4 @@
-package ikastaro_objektuak;
+package ikastaro_objetuak;
 
 import java.util.ArrayList;
 
