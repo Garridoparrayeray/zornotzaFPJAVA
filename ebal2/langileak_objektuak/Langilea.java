@@ -3,27 +3,20 @@ package langileak_objektuak;
 import java.util.Date;
 
 public class Langilea {
-	int id;
-	String izena;
-	double oinarrizkoSoldata;
-	Data jaiotzeData;
-	int hurrengoId = 1;//automatikoki sortzen du id
+	private int id;
+	private String izena;
+	private double oinarrizkoSoldata;
+	private Data jaiotzeData;
+	private static int hurrengoId = 1;//automatikoki sortzen du id
 	public Langilea() {
 		this.id = 0;
 		this.izena = "";
 		this.oinarrizkoSoldata = 0.0;
-		Data jaiotzeData = new Data();//lehenetsia 1/1/2025
+		this.jaiotzeData = new Data();//lehenetsia 1/1/2025
 	}
 	
-	public Langilea(String izena, double oinarrizkoSoldata) {
+	public Langilea(String izena, double oinarrizkoSoldata, Data d) {
 		this.id = hurrengoId++;
-		this.izena = izena;
-		this.oinarrizkoSoldata = oinarrizkoSoldata;
-		this.jaiotzeData = new Data();
-	}
-	
-	public Langilea(int id, String izena, double oinarrizkoSoldata, Data d) {
-		this.id = id;
 		this.izena = izena;
 		this.oinarrizkoSoldata = oinarrizkoSoldata;
 		
