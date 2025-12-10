@@ -1,25 +1,24 @@
 package langileak_objektuak;
 
 public class Soldatapekoa extends Langilea {
-	double soldataFinala;
-	int orduExtrak;
+	private double soldataFinala;
+	private int orduExtrak;
 
 	public Soldatapekoa() {
 		super();
-		soldataFinala = super.oinarrizkoSoldata;
-		this.orduExtrak = 0;
-	}
-	
-	//sartzeko langile normalaren konstruktorea(id automatikoa)
-	public Soldatapekoa(String izena, double oinarrizkoSoldata) {
-		super(izena, oinarrizkoSoldata);
-		this.soldataFinala = super.getOinarrizkoSoldata();
+		soldataFinala = super.getOinarrizkoSoldata();
 		this.orduExtrak = 0;
 	}
 
-	//konstruktore guztia(id manuala eta data hartzen)
-	public Soldatapekoa(int id, String izena, double oinarrizkoSoldata, Data d) {
-		super(id, izena, oinarrizkoSoldata, d);
+	// sartzeko langile normalaren konstruktorea(id automatikoa)
+	public Soldatapekoa(String izena, double oinarrizkoSoldata) {
+		super(izena, oinarrizkoSoldata, new Data());
+		this.soldataFinala = oinarrizkoSoldata;
+		this.orduExtrak = 0;
+	}
+
+	public Soldatapekoa(String izena, double oinarrizkoSoldata, Data d) {
+		super(izena, oinarrizkoSoldata, d);
 		this.orduExtrak = 0;
 		this.soldataFinala = super.getOinarrizkoSoldata();
 	}
@@ -54,6 +53,11 @@ public class Soldatapekoa extends Langilea {
 		} else {
 			System.out.println("Errorea: Ordu extra kopurua ezin da negatiboa izan.");
 		}
+	}
+
+	public void soldataFinalaKalkulatu(double orduExtraOrdainketa) {
+		double extraOrdainketaTotala = this.orduExtrak * orduExtraOrdainketa;
+		this.soldataFinala = this.getOinarrizkoSoldata() + extraOrdainketaTotala;
 	}
 
 }
