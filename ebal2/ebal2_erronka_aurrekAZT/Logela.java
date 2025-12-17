@@ -2,8 +2,8 @@ package ebal2_erronka_aurrekAZT;
 
 public class Logela {
 	private int logelaZenbakia;
-	protected int okupatzaileenKopurua;
-	protected double pertsonakoPrezioa;
+	private int okupatzaileenKopurua;
+	private double pertsonakoPrezioa;
 	
 	protected Logela() {
 		this.logelaZenbakia = 0;
@@ -56,9 +56,10 @@ public class Logela {
 	}
 	@Override
 	public String toString() {
-		return "Logela [logelaZenbakia=" + logelaZenbakia + ", okupatzaileenKopurua=" + okupatzaileenKopurua
-				+ ", pertsonakoPrezioa=" + pertsonakoPrezioa + "]";
+		return "logelaZenbakia : " + logelaZenbakia + ", okupatzaileenKopurua : " + okupatzaileenKopurua
+				+ ", pertsonakoPrezioa=" + pertsonakoPrezioa ;
 	}
+	
 	
 	public void logelarenPrezioaLortu(){
 		System.out.println(this.pertsonakoPrezioa * this.okupatzaileenKopurua + "€");

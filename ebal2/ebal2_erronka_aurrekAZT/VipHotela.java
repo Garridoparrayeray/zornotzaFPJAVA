@@ -3,13 +3,11 @@ package ebal2_erronka_aurrekAZT;
 import java.util.ArrayList;
 
 public class VipHotela {
-	protected String izena;
-	protected ArrayList<Viplogela> logelak = new ArrayList<Viplogela>();
+	private String izena;
+	private ArrayList<Viplogela> logelak = new ArrayList<Viplogela>();
 
 	
 	public VipHotela() {
-		this.izena = "";
-		this.logelak = new ArrayList<>();//arraylist abiarazi
 	}
 
 	/**

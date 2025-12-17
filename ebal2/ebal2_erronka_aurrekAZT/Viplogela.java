@@ -5,8 +5,6 @@ public class Viplogela extends Logela {
 
 	public Viplogela() {
 		super();
-		this.vipGehigarria = 0.0;
-		
 	}
 
 	public Viplogela(int lZ, int oK, double pB, double vG) {
@@ -30,11 +28,12 @@ public class Viplogela extends Logela {
 
 	@Override
 	public String toString() {
-		return "Viplogela [vipGehigarria=" + vipGehigarria + "]" + super.getLogelaZenbakia() + super.getOkupatzaileenKopurua() + super.getPertsonakoPrezioa();
+		return "Viplogela [vipGehigarria=" + vipGehigarria + "]" +" Logela zenbakia: " +  super.getLogelaZenbakia() + " Okupatzaile kopurua: "+ super.getOkupatzaileenKopurua() + " Pertsonako prezioa: "+  super.getPertsonakoPrezioa();
 	}
 	
+	@Override
 	public void logelarenPrezioaLortu(){
-		System.out.println((super.pertsonakoPrezioa * super.okupatzaileenKopurua + vipGehigarria) + "€");
+		System.out.println((getPertsonakoPrezioa() * getOkupatzaileenKopurua() + vipGehigarria) + "€");
 	}
 	
 	

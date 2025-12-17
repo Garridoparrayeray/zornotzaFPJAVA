@@ -84,21 +84,20 @@ public class HotelaAPP {
 		VipHotela h1 = new VipHotela();
 		VipHotela h2 = new VipHotela();
 		
-		h1.logelak.add(vipLogelaLista.get(0));
-		h1.logelak.add(vipLogelaLista.get(1));
-		h2.logelak.add(vipLogelaLista.get(2));
-		for(Viplogela l : h1.logelak) {
-			System.out.println(l);
-		}
+		h1.setIzena("PacoPorras");
+		h2.setIzena("PorrasPaco");
+		h1.logelaGehitu(vipLogelaLista.get(0));
+		h1.logelaGehitu(vipLogelaLista.get(1));
+		h2.logelaGehitu(vipLogelaLista.get(2));
+		System.out.println(h1);
+		System.out.println(h2);
 	}
 
 public void kudeatuInterakzioa() {
-    // 5.1 Logela zenbakia eskatu
     System.out.print("Sartu aldatu nahi duzun logela-zenbakia: ");
     int zenbakia = sc.nextInt();
 
     Viplogela aurkitutakoa = null;
-    // Logela ArrayList-en badagoen egiaztatu
     for (Viplogela v : vipLogelaLista) {
         if (v.getLogelaZenbakia() == zenbakia) {
             aurkitutakoa = v;
@@ -108,33 +107,33 @@ public void kudeatuInterakzioa() {
 
     if (aurkitutakoa == null) {
         System.err.println("Sartutako logela-zenbakia ez da existitzen.");
-        System.exit(0); // Programa amaitu
+        System.exit(0); 
     }
 
-    // 5.2 Okupatzaile kopuru berria eskatu
+   
     System.out.print("Sartu okupatzaile kopuru berria: ");
     int kopuruBerria = sc.nextInt();
 
-    // Balioa 1 eta 4 artean dagoela egiaztatu
+   
     if (kopuruBerria < 1 || kopuruBerria > 4) {
         System.err.println("Sartutako bidaiari-kopurua ez da zuzena.");
-        System.exit(0); // Programa amaitu
+        System.exit(0); 
     }
 
-    // Logelako atributua aldatu
+    
     aurkitutakoa.setOkupatzaileenKopurua(kopuruBerria);
 
-    // Logelaren prezio berria kalkulatu eta inprimatu
+    
     System.out.print("Logelaren prezio berria: ");
-    aurkitutakoa.logelarenPrezioaLortu(); // Zure klaseko metodoa erabili
+    aurkitutakoa.logelarenPrezioaLortu();
 
-    // Logelen ArrayList osoa berriro inprimatu
+    
     System.out.println("\n--- Zerrenda Eguneratua ---");
     for (Viplogela v : vipLogelaLista) {
         System.out.println(v.toString());
     }
 
-    // ArrayList-eko datuak fitxategira gorde
+
     gordeFitxategian();
     
     System.out.println("Programa ondo amaitu da.");
@@ -143,8 +142,9 @@ public void kudeatuInterakzioa() {
 
 public void gordeFitxategian() {
     try (PrintWriter writer = new PrintWriter(new File(fitxategia))) {
-        for (Viplogela v : vipLogelaLista) {
-            // Formatu bera erabili: zenbakia:okupatzaileak:prezioa:vipgehigarria
+    	writer.println("logelaZenbakia:okupatzaileenKopurua:pertsonakoPrezioa");
+    	for (Viplogela v : vipLogelaLista) {
+           
             writer.println(v.getLogelaZenbakia() + ":" + 
                            v.getOkupatzaileenKopurua() + ":" + 
                            (int)v.getPertsonakoPrezioa() + ":" + 

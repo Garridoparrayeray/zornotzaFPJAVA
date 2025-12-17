@@ -1,3 +1,4 @@
+logelaZenbakia:okupatzaileenKopurua:pertsonakoPrezioa
 101:2:35:20
 201:1:25:20
 301:3:55:20
