@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="700.0" prefWidth="1100.0" spacing="0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Kontrolatzailea">
+   <children>
+      <VBox prefWidth="250.0" spacing="15.0" styleClass="sidebar">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+         </padding>
+         <children>
+            <Text styleClass="logo-text" text="FUTBOL KUDEAKETA" />
+            <Separator opacity="0.2" />
+            <Button fx:id="btnJokalariak" maxWidth="Infinity" onAction="#getJokalariak" styleClass="nav-button" text="Jokalariak Ikusi" />
+            <Button fx:id="btnTaldeak" maxWidth="Infinity" onAction="#getTaldeak" styleClass="nav-button" text="Taldeak Ikusi" />
+            <Region VBox.vgrow="ALWAYS" />
+            <Button maxWidth="Infinity" onAction="#handleIrten" styleClass="nav-button, exit-button" text="✕ Irten" />
+         </children>
+      </VBox>
+
+      <VBox spacing="20.0" styleClass="main-content" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <VBox prefWidth="400.0" spacing="15.0" styleClass="card">
+                     <children>
+                        <Text styleClass="card-title" text="Gestio Panela" />
+                        <GridPane hgap="10.0" vgap="10.0">
+                           <children>
+                              <TextField fx:id="txtIdInput" promptText="DNI / ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                              <TextField fx:id="txtIzena" promptText="Izena" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                              <TextField fx:id="txtAbizena" promptText="Abizena" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtExtra" promptText="Soldata / Herria" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Button onAction="#setJokalaria" styleClass="action-button" text="+ Jokalaria" />
+                              <Button onAction="#setTaldea" styleClass="action-button" text="+ Taldea" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  
+                  <VBox spacing="15.0" styleClass="card" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text styleClass="card-title" text="Bilaketa" />
+                        <HBox spacing="10.0">
+                           <TextField fx:id="txtSearch" promptText="Bilatu ID bidez..." HBox.hgrow="ALWAYS" />
+                           <Button onAction="#handleBilatuJokalaria" styleClass="search-button" text="" />
+                        </HBox>
+                        <Label fx:id="lblStatus" styleClass="status-label" text="Sistemak ondo funtzionatzen du" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+
+            <TableView fx:id="tablaDatos" styleClass="modern-table" VBox.vgrow="ALWAYS">
+               </TableView>
+         </children>
+      </VBox>
+   </children>
+</HBox>
