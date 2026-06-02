@@ -1,0 +1,5 @@
+==== ERRESERBEN TXOSTENA ====
+Erabiltzailea juan
+Erreserba kopurua: 2
+model.Erreserba@792be6fe
+model.Erreserba@73be45e3

@@ -1,0 +1,2 @@
+aitor
+Hitzorduak: hitzorduak [id=1, animaliaIzena=Rex, data=2026-06-10, ordua=10:00]hitzorduak [id=1, animaliaIzena=Mitxi, data=2026-06-10, ordua=10:00]
