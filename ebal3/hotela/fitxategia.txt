@@ -1,0 +1,4 @@
+Erreserbak [id=1, idBezeroa=2, idGela=1, data=2026-06-10]
+Erreserbak [id=2, idBezeroa=3, idGela=3, data=2026-06-15]
+Erreserbak [id=3, idBezeroa=2, idGela=1, data=2026-06-10]
+
