@@ -1,0 +1,7 @@
+=== ERRESERBEN TXOSTENA ===
+
+Erabiltzailea: maria
+Erreserba kopurua: 2
+
+Spinning | 2026-04-21
+Yoga | 2026-04-22
